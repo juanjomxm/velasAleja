@@ -1,0 +1,159 @@
+body{
+    background-image: url("https://w0.peakpx.com/wallpaper/422/512/HD-wallpaper-time-to-relax-candle-laverder-lite-flowers-day-relaxing.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+body a{
+    color: white;
+}
+
+body p{
+    color: white;
+}
+
+
+section{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+button{
+    width: 100px;
+    height: 20px;
+    background: burlywood;
+    border-radius: 20px;
+    color: white;
+    border-color: transparent;
+}
+
+
+#titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+}
+
+#titulo-velas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.velas-grandes{
+    width: 300px;
+    height: 300px;
+    background: burlywood;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.velas-grandes img {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.velas-grandes p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.catalogo-velas-grandes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalogo-velas-grandes img{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.velas-pequeñas{
+    width: 300px;
+    height: 300px;
+    background: burlywood;
+    margin-top: 30px;
+    border-radius: 20px;
+} 
+
+.velas-pequeñas img{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.velas-pequeñas p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.catalogo-velas-pequeñas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.catalogo-velas-pequeñas img{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.velas-con-aroma{
+    width: 300px;
+    height: 300px;
+    background: burlywood;
+    margin-top: 30px;
+    border-radius: 20px;  
+}
+
+.velas-con-aroma img{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.velas-con-aroma p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+.velas-infantiles{
+    width: 300px;
+    height: 300px;
+    background: burlywood;
+    border-radius: 20px; 
+}
+
+.velas-infantiles img{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.velas-infantiles p{
+    display: flex;
+    justify-content: center;
+    color: white;
+}

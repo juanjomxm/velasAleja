@@ -4,11 +4,13 @@ let tituloVelas = document.querySelector("#titulo-velas")
 let esconderCatalogo = document.querySelector(".catalogo-velas-grandes")
 let esconderCatalogo2 = document.querySelector(".catalogo-velas-pequeñas")
 let esconderCatalogo3 = document.querySelector(".catalogo-velas-aroma")
+let esconderCatalogo4 = document.querySelector(".catalogo-velas-infantiles")
 
 function iniciarCatalogo(){
     esconderCatalogo.style.display = "none"
     esconderCatalogo2.style.display = "none"
     esconderCatalogo3.style.display = "none"
+    esconderCatalogo4.style.display = "none"
 }
 
 const imagenVelasGrandes = document.querySelector("#imagen-grandes")
@@ -95,7 +97,6 @@ function catalogoVelasPequeñas(){
     esconderCatalogo.style.display = "none" // Esto es para esconder una section cuando active otro boton o funcion
     esconderCatalogo3.style.display = "none"
 
-
     const velasSmall = document.querySelector("#velas-small")
     const velasSmall2 = document.querySelector("#velas-small2")
     const velasSmall3 = document.querySelector("#velas-small3")
@@ -135,6 +136,30 @@ function catalogoVelasAroma(){
     if(botonVelasAroma){
         tituloVelas.innerText = "VELAS AROMA"
         esconderCatalogo3.style.display = "flex"
+    }
+}
+
+const botonVelasInfantiles = document.querySelector("#boton-infantiles")
+botonVelasInfantiles.addEventListener("click", catalogoVelasInfantiles)
+
+function catalogoVelasInfantiles(){
+    const  tituloVelas2 = document.querySelector("#titulo-velas2")
+
+    const velasInfantiles = document.querySelector("#velas-infantil")
+    const velasInfantiles2 = document.querySelector("#velas-infantil2")
+    const velasInfantiles3 = document.querySelector("#velas-infantil3")
+    const velasInfantiles4 = document.querySelector("#velas-infantil4")
+    const velasInfantiles5 = document.querySelector("#velas-infantil5")
+    const velasInfantiles6 = document.querySelector("#velas-infantil6")
+    const velasInfantiles7 = document.querySelector("#velas-infantil7")
+    const velasInfantiles8 = document.querySelector("#velas-infantil8")
+    const velasInfantiles9 = document.querySelector("#velas-infantil9")
+    const velasInfantiles10 = document.querySelector("#velas-infantil10")
+
+    if(botonVelasInfantiles){
+        tituloVelas2.innerText = "VELAS INFANTILES"
+        esconderCatalogo4.style.display = "flex"
+
     }
 }
 

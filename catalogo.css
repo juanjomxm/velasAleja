@@ -191,3 +191,25 @@ button{
     justify-content: center;
     color: white;
 }
+
+#titulo-velas2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.catalogo-velas-infantiles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalogo-velas-infantiles img{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 20px;
+}

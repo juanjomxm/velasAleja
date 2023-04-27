@@ -40,7 +40,7 @@ function cambiarTexto4(){
     const tituloImagen4 = document.querySelector("#titulo-imagen4")
 
     if(imagenVelasInfantiles){
-        tituloImagen4.innerText = "PERSONALIZADAS"
+        tituloImagen4.innerHTML = "PERSONALIZADAS"
 
     }
 }
@@ -51,10 +51,19 @@ function cambiarTexto4(){
 const botonVelasGrandes = document.querySelector("#boton-grandes")
     botonVelasGrandes.addEventListener("click", catalogoVelasGrandes)
 
-//                                       VARIABLES GLOBALES
-let tituloVelas
+//    VARIABLE GLOBAL
+
+let tituloVelas = document.querySelector("#titulo-velas")
+let esconderCatalogo = document.querySelector(".catalogo-velas-grandes")
+let esconderCatalogo2 = document.querySelector(".catalogo-velas-pequeñas")
+let esconderCatalogo3 = document.querySelector(".catalogo-velas-aroma")
+
 
 function catalogoVelasGrandes(){
+    esconderCatalogo.style.display = "flex"
+    esconderCatalogo2.style.display = "none"
+    esconderCatalogo3.style.display = "none"
+   
     let tituloVelas = document.querySelector("#titulo-velas")
 
     const velasBig = document.querySelector("#velas-big")
@@ -117,7 +126,10 @@ function catalogoVelasGrandes(){
         velasBig9.append(imgVelasBig9)
         velasBig10.append(imgVelasBig10)
     }
-    botonVelasGrandes.disabled = true// Deshabiitar el boton cuando cumple su condicion
+    botonVelasGrandes.disabled = true
+    botonVelasPequeñas.disabled = false
+    botonVelasAroma.disabled = false// Deshabiitar el boton cuando cumple su condicion
+    
 }
     
 
@@ -126,10 +138,10 @@ botonVelasPequeñas.addEventListener("click", catalogoVelasPequeñas)
 
 
 function catalogoVelasPequeñas(){
-    let esconderCatalogo = document.querySelector(".catalogo-velas-grandes")
+    esconderCatalogo2.style.display = "flex"
     esconderCatalogo.style.display = "none" // Esto es para esconder una section cuando active otro boton o funcion
+    esconderCatalogo3.style.display = "none"
 
-    let tituloVelas = document.querySelector("#titulo-velas")
 
     const velasSmall = document.querySelector("#velas-small")
     let imgVelasSmall = document.createElement("img")
@@ -185,5 +197,74 @@ function catalogoVelasPequeñas(){
         velasSmall9.append(imgVelasSmall9)
         velasSmall10.append(imgVelasSmall10)
     }
-    botonVelasPequeñas.disabled = true 
+    botonVelasPequeñas.disabled = true
+    botonVelasGrandes.disabled = false
+    botonVelasAroma.disabled = false
+}
+
+const botonVelasAroma = document.querySelector("#boton-aroma")
+botonVelasAroma.addEventListener("click", catalogoVelasAroma)
+
+function catalogoVelasAroma(){
+   esconderCatalogo.style.display = "none"
+   esconderCatalogo2.style.display = "none"
+   esconderCatalogo3.style.display = "flex"
+
+    const velasAroma = document.querySelector("#velas-aroma")
+    let imgVelasAroma = document.createElement("img")
+    imgVelasAroma.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+ 
+
+    const velasAroma2 = document.querySelector("#velas-aroma2")
+    let imgVelasAroma2 = document.createElement("img")
+    imgVelasAroma2.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma3 = document.querySelector("#velas-aroma3")
+    let imgVelasAroma3 = document.createElement("img")
+    imgVelasAroma3.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma4 = document.querySelector("#velas-aroma4")
+    let imgVelasAroma4 = document.createElement("img")
+    imgVelasAroma4.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma5 = document.querySelector("#velas-aroma5")
+    let imgVelasAroma5 = document.createElement("img")
+    imgVelasAroma5.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma6 = document.querySelector("#velas-aroma6")
+    let imgVelasAroma6 = document.createElement("img")
+    imgVelasAroma6.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma7 = document.querySelector("#velas-aroma7")
+    let imgVelasAroma7 = document.createElement("img")
+    imgVelasAroma7.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma8 = document.querySelector("#velas-aroma8")
+    let imgVelasAroma8 = document.createElement("img")
+    imgVelasAroma8.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma9 = document.querySelector("#velas-aroma9")
+    let imgVelasAroma9 = document.createElement("img")
+    imgVelasAroma9.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    const velasAroma10 = document.querySelector("#velas-aroma10")
+    let imgVelasAroma10 = document.createElement("img")
+    imgVelasAroma10.setAttribute("src", "https://media.revistagq.com/photos/63a2d44a43d6a51b81e84b2b/16:9/w_2560%2Cc_limit/GettyImages-1409853884.jpg")
+
+    if(botonVelasAroma){
+        tituloVelas.innerText = "VELAS AROMA"
+        velasAroma.append(imgVelasAroma)
+        velasAroma2.append(imgVelasAroma2)
+        velasAroma3.append(imgVelasAroma3)
+        velasAroma4.append(imgVelasAroma4)
+        velasAroma5.append(imgVelasAroma5)
+        velasAroma6.append(imgVelasAroma6)
+        velasAroma7.append(imgVelasAroma7)
+        velasAroma8.append(imgVelasAroma8)
+        velasAroma9.append(imgVelasAroma9)
+        velasAroma10.append(imgVelasAroma10)
+    }
+    botonVelasAroma.disabled = true
+    botonVelasGrandes.disabled = false
+    botonVelasPequeñas.disabled = false
 }

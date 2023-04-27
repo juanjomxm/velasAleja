@@ -83,6 +83,7 @@ button{
     border-radius: 20px;
 }
 
+
 .velas-pequeñas{
     width: 300px;
     height: 300px;
@@ -102,6 +103,15 @@ button{
     justify-content: center;
     color: white;
 }
+
+/*
+#titulo-velas2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}*/
 
 .catalogo-velas-pequeñas{
     width: 100%;
@@ -138,12 +148,36 @@ button{
     color: white;
 }
 
+/*
+#titulo-velas3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}*/
+
+.catalogo-velas-aroma{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalogo-velas-aroma img{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
 
 .velas-infantiles{
     width: 300px;
     height: 300px;
     background: burlywood;
     border-radius: 20px; 
+    margin-top: 10px;
 }
 
 .velas-infantiles img{

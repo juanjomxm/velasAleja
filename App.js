@@ -1,7 +1,9 @@
 import react from 'react';
 
-import { ViewBigCandles } from './BigCandles/BigCandles';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { ViewSpecialCandles } from './SpecialCandles/SpecialCandles';
+import { SmallCandles } from './SmallCandles/SmallCandles';
+
+import { StyleSheet, Text, View, ImageBackground, ScrollView } from 'react-native';
 
 
 export default function App() {
@@ -13,10 +15,15 @@ export default function App() {
     >
       <Text style={styles.title}>CATALOGO VELAS</Text>
 
-      <View style={styles.bottomContainer}>
-      <Text style={styles.subtitle}>FECHAS ESPECIALES</Text>
-        <ViewBigCandles />
-      </View>
+      <ScrollView>
+        <View style={styles.bottomContainer}>
+          <Text style={styles.subtitle}>FECHAS ESPECIALES</Text>
+          <ViewSpecialCandles />
+
+          <Text style={styles.subtitle}>VELAS PEQUEÑAS</Text>
+          <SmallCandles/>
+        </View>
+      </ScrollView>
     </ImageBackground>
   );
 }

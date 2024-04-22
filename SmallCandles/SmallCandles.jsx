@@ -1,18 +1,17 @@
-import react from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import React from "react";
+import { StyleSheet, View, Text, Image } from "react-native";
 
-const catalogBigCandles = [
-    {name:'Vela abuela', price: '20000 COP', image: 'https://i.etsystatic.com/12454197/r/il/6b3f6a/3043676617/il_1588xN.3043676617_jagp.jpg'},
-    {name: 'Vela mamá', price: '15000 COP', image: 'https://th.bing.com/th/id/OIP.Af7RcB5MkYjI4gUH1D8n9wHaGq?rs=1&pid=ImgDetMain'},
-    {name: 'Vela papá', price: '18000 COP', image: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/174/623/products/papa_web-021-0ff3df249a140ee1c416234481195961-640-0.jpg'},
+const catalogSmallCandles = [
+    {name: 'Velita', price: '10000 COP', image: 'https://th.bing.com/th/id/OIP.ZJ387DFxO5VYvRXUpOFrCwHaHa?rs=1&pid=ImgDetMain'},
+    {name: 'Arbol pequeño', price: '20000 COP', image: 'https://i.etsystatic.com/14223543/r/il/08e935/2666349382/il_fullxfull.2666349382_8dp6.jpg'}
 ]
 
-function ViewBigCandles(){
-    const [dataCandles, setDataCandles] = react.useState(catalogBigCandles)
+function SmallCandles(){
+    const [dataSmallCandles, setDataSmallCandles] = React.useState(catalogSmallCandles)
 
     return(
         <View style={styles.container}>
-            {dataCandles.map((item, index)=>(
+            {dataSmallCandles.map((item, index)=>(
                 <View key={index} style={styles.itemContainer}>
                     <Text>{item.name}</Text>
                     <Image
@@ -49,4 +48,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export { ViewBigCandles }
+export { SmallCandles }
